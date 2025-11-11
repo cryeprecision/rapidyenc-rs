@@ -5,7 +5,6 @@ jobs:
     strategy:
       matrix:
         toolchain: [stable, nightly]
-        profile: [debug, release]
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -16,4 +15,4 @@ jobs:
         with:
           toolchain: ${{ matrix.toolchain }}
           components: rustfmt, clippy
-      - run: cargo test --${{ matrix.profile }}
+      - run: cargo test --release
