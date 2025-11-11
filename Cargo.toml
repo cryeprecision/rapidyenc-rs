@@ -1,0 +1,14 @@
+[package]
+name = "rapidyenc"
+version = "0.1.0-beta.1"
+edition = "2024"
+description = "Rust interface for rapidyenc by animetosho"
+readme = "README.md"
+keywords = ["rapidyenc", "yenc"]
+build = "build.rs"
+
+[dependencies]
+
+[build-dependencies]
+cmake = { version = "0.1" }
+bindgen = { version = "0.72" }
